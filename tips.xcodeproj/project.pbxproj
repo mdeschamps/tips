@@ -13,6 +13,11 @@
 		3DB7501A1CC9AB93005C7141 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3DB750191CC9AB93005C7141 /* Assets.xcassets */; };
 		3DB7501D1CC9AB93005C7141 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3DB7501B1CC9AB93005C7141 /* LaunchScreen.storyboard */; };
 		3DB750281CC9AB93005C7141 /* tipsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DB750271CC9AB93005C7141 /* tipsUITests.swift */; };
+		3DBA6B861CCF33AC001D7E21 /* BillAmountView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DBA6B851CCF33AC001D7E21 /* BillAmountView.swift */; };
+		3DBA6B881CCFF749001D7E21 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DBA6B871CCFF749001D7E21 /* SettingsViewController.swift */; };
+		3DBA6B8B1CD0027C001D7E21 /* TipsTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DBA6B8A1CD0027C001D7E21 /* TipsTheme.swift */; };
+		3DBA6B8D1CD00C08001D7E21 /* TipsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DBA6B8C1CD00C08001D7E21 /* TipsView.swift */; };
+		3DBA6B8F1CD03945001D7E21 /* TipsLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DBA6B8E1CD03945001D7E21 /* TipsLabel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +41,11 @@
 		3DB750231CC9AB93005C7141 /* tipsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = tipsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3DB750271CC9AB93005C7141 /* tipsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = tipsUITests.swift; sourceTree = "<group>"; };
 		3DB750291CC9AB93005C7141 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3DBA6B851CCF33AC001D7E21 /* BillAmountView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BillAmountView.swift; sourceTree = "<group>"; };
+		3DBA6B871CCFF749001D7E21 /* SettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		3DBA6B8A1CD0027C001D7E21 /* TipsTheme.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TipsTheme.swift; sourceTree = "<group>"; };
+		3DBA6B8C1CD00C08001D7E21 /* TipsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TipsView.swift; sourceTree = "<group>"; };
+		3DBA6B8E1CD03945001D7E21 /* TipsLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TipsLabel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,8 +87,11 @@
 		3DB750111CC9AB93005C7141 /* tips */ = {
 			isa = PBXGroup;
 			children = (
+				3DBA6B891CCFF750001D7E21 /* Views */,
 				3DB750121CC9AB93005C7141 /* AppDelegate.swift */,
 				3DB750141CC9AB93005C7141 /* ViewController.swift */,
+				3DBA6B871CCFF749001D7E21 /* SettingsViewController.swift */,
+				3DBA6B8A1CD0027C001D7E21 /* TipsTheme.swift */,
 				3DB750161CC9AB93005C7141 /* Main.storyboard */,
 				3DB750191CC9AB93005C7141 /* Assets.xcassets */,
 				3DB7501B1CC9AB93005C7141 /* LaunchScreen.storyboard */,
@@ -94,6 +107,16 @@
 				3DB750291CC9AB93005C7141 /* Info.plist */,
 			);
 			path = tipsUITests;
+			sourceTree = "<group>";
+		};
+		3DBA6B891CCFF750001D7E21 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				3DBA6B851CCF33AC001D7E21 /* BillAmountView.swift */,
+				3DBA6B8C1CD00C08001D7E21 /* TipsView.swift */,
+				3DBA6B8E1CD03945001D7E21 /* TipsLabel.swift */,
+			);
+			name = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -197,8 +220,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3DBA6B8D1CD00C08001D7E21 /* TipsView.swift in Sources */,
 				3DB750151CC9AB93005C7141 /* ViewController.swift in Sources */,
+				3DBA6B861CCF33AC001D7E21 /* BillAmountView.swift in Sources */,
 				3DB750131CC9AB93005C7141 /* AppDelegate.swift in Sources */,
+				3DBA6B881CCFF749001D7E21 /* SettingsViewController.swift in Sources */,
+				3DBA6B8B1CD0027C001D7E21 /* TipsTheme.swift in Sources */,
+				3DBA6B8F1CD03945001D7E21 /* TipsLabel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -386,6 +414,7 @@
 				3DB7502E1CC9AB93005C7141 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		3DB7502F1CC9AB93005C7141 /* Build configuration list for PBXNativeTarget "tipsUITests" */ = {
 			isa = XCConfigurationList;
@@ -394,6 +423,7 @@
 				3DB750311CC9AB93005C7141 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
